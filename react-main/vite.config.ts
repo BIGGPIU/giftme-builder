@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base:"https://biggpiu.github.io/giftme/setup"
+  base:"https://biggpiu.github.io/giftme-builder/"
 })
