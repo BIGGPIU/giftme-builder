@@ -1,0 +1,5 @@
+const THEME_DEFAULT_BLACK_ON_WHITE = 0;
+
+
+
+export default THEME_DEFAULT_BLACK_ON_WHITE;
