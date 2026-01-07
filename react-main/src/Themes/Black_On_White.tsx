@@ -13,6 +13,7 @@ function GenerateThemeBlackOnWhite(props:GenerateThemeBlackOnWhiteProps) {
     let regex = new RegExp("^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)");
     let all_vendors = new Set<String>([]);
     let vendor_filter_enabled = (vendor_filter != "null");
+    console.log("generating html for wishlist...")
 
 
 
@@ -109,6 +110,8 @@ type BlackOnWhiteWishlistItemProps = {
 
 function BlackOnWhiteWishlistItem(props:BlackOnWhiteWishlistItemProps) {
     let alternative_links = <></>
+    console.log(props.wishlist_item)
+    
 
     if (props.wishlist_item.alternative_storefront_links.length != 0) {
         alternative_links = (
