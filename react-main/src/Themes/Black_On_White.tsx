@@ -23,24 +23,30 @@ function GenerateThemeBlackOnWhite(props:GenerateThemeBlackOnWhiteProps) {
     props.all_wishlist_items.forEach((x) => {
         let y:any = regex.exec(x.wishlist_storefront_link.toString())
 
-        if (y[0] == null) {
 
-        }
-        else {
-            all_vendors.add(y[1])
-        }
-
-        x.alternative_storefront_links.forEach((e) => {
-            y = regex.exec(e.toString());
-            
+        try {
             if (y[0] == null) {
-                
+    
             }
             else {
                 all_vendors.add(y[1])
             }
+            
+            x.alternative_storefront_links.forEach((e) => {
+                y = regex.exec(e.toString());
+                
+                if (y[0] == null) {
+                    
+                }
+                else {
+                    all_vendors.add(y[1])
+                }
+    
+            })
+        } catch (_) {
+            
+        }
 
-        })
     })
 
     
