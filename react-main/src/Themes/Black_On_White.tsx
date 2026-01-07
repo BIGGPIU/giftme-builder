@@ -7,6 +7,9 @@ interface GenerateThemeBlackOnWhiteProps {
 }
 
 function GenerateThemeBlackOnWhite(props:GenerateThemeBlackOnWhiteProps) {
+
+    console.log(props)
+
     let [price_filter,set_price_filter] = useState(NaN)
     let [vendor_filter,set_vendor_filter] = useState<String>("")
     let [name_filter,set_name_filter] = useState<String>("")

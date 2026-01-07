@@ -6,6 +6,8 @@ import FileSaver from "file-saver"
 
 function generate_html(theme:number,all_wishlist_items:WishlistItem[],user_name:String) {
     
+    console.log(all_wishlist_items)
+
     let blob_parts = `<!DOCTYPE html> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>${user_name} Wishlist</title> </head> ` 
 
     switch (theme) {

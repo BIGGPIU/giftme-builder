@@ -76,6 +76,7 @@ function Builder() {
                 <div className="w-1/2 left-1/2 relative -translate-x-1/2">
                     <div className="w-full h-16 relative border-gray-400 rounded-md border-2 cursor-pointer hover:bg-gray-600"
                     onClick={() => {
+                        console.log(all_items)
                         generate_html(THEME_DEFAULT_BLACK_ON_WHITE,all_items,name)
                     }}
                     >
